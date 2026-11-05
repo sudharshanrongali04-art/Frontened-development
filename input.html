@@ -1,34 +1,51 @@
+<!DOCTYPE html>
 <html>
-    <title>
-        INPUT PAGE
-    </title>
-    <head>
-        <h2>Registration Form</h2>
-    </head>
-    <body>
+    <title>INPUT PAGE</title>
+<head>
+    <style>
+        .registration-box {
+            width: 350px;
+            margin: 50px auto;
+            padding: 25px;
+            border: 3px solid black;
+            border-radius: 10px;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+
+<body>
+<div class="registration-box">
+    <h2 style="text-align:center;">Registration Form</h2>
         <form>
-            <label for="fname">First name:</label><br>  
-            &nbsp;<input type="text" id="fname" name="fname"><br>  
-            <label for="lname">Last name:</label><br>
-            &nbsp;<input type="text" id="lname" name="lname"><br><br>
-            <label for="email">Email:</label><br>
-            &nbsp;<input type="email" id="email" name="email"><br><br>
-            <label for="phone">Phone:</label><br>
-            &nbsp;<input type="tel" id="phone" name="phone"><br><br>
-            <p>Gender:</p>
-            <input type="checkbox" id="male" name="gender" value="male">
-            &nbsp;<label for="male">Male</label><br>
-            <input type="checkbox" id="female" name="gender" value="female">
-            &nbsp;<label for="female">Female</label><br>
-            <input type="checkbox" id="others" name="gender" value="others">
-            &nbsp;<label for="others">Others</label><br><br>
-            <label for="password">Password:</label><br>
-            &nbsp;<input type="password" id="password" name="password"><br>
-            <label for="cpassword">Confirm Password:</label><br>
-            &nbsp;<input type="password" id="cpassword" name="cpassword"><br><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="Submit" onclick="alert('Do you want to Submit')">
-            <input type="reset" value="Reset" onclick="alert('CAUTION:All the data will be lost')">
+            <label>First Name:</label><br>
+            <input type="text"><br><br>
+
+            <label>Last Name:</label><br>
+            <input type="text"><br><br>
+
+            <label>Email:</label><br>
+            <input type="email"><br><br>
+
+            <label>Phone:</label><br>
+            <input type="tel"><br><br>
+
+            <label>Gender:</label><br>
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+            <input type="radio" name="gender"> Others<br><br>
+
+            <label>Password:</label><br>
+            <input type="password"><br><br>
+
+            <label>Confirm Password:</label><br>
+            <input type="password"><br><br>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
         </form>
 
-    </body>
+    </div>
+
+</body>
 </html>
