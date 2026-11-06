@@ -1,0 +1,37 @@
+div{
+    color:darkslategray
+    h2{
+        color:rgb(15, 10, 1);
+    }
+    h3{
+        font-weight: bold;
+        color:brown;
+}
+    text-align: center;
+    border: 0px solid black;
+    border-radius: 25px;
+    margin-top: 100px;
+    margin-left: 130px;
+    margin-right:130px;
+    padding-top: 20px;
+    padding-bottom:20px;
+    padding-left:40px;
+    padding-right:40px;
+    background-color:darkgray;
+    gap:10px;
+    button{
+        width: 100px;
+        height: 30px;
+        border: 1px solid black;
+        border-radius: 10px;
+        gap: 30px;
+        background-color:red;
+        border-radius: 10px;
+        font-size: 15px;
+
+    }
+}
+body{
+    background-color:black;
+    background-image: url('https://wallpapercat.com/w/full/d/7/e/945852-2160x3840-samsung-4k-matte-black-background-photo.jpg');
+}
