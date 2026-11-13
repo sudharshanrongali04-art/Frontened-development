@@ -1,0 +1,105 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: lightgray;
+}
+
+div {
+    margin: 50px auto;
+    border-style: none;
+    background-color:burlywood;
+    width: 300px;
+    height: auto;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 30px black;
+}
+
+h2{
+    color: black;
+    text-shadow:3px 3px 9px white;
+}
+h3{
+    color:azure;
+    text-shadow:3px 3px 9px black;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    border-style: none;
+    background-color:black;
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow:5px 5px 90px 2px black;
+}
+
+#add_task {
+    height: 40px;
+    font-weight: 500;
+    border-radius: 10px;
+    color: black;
+    cursor: pointer;
+    box-shadow:5px 5px 70px 1px bisque;
+}
+
+#add_task:hover {
+    background-color: lightblue;
+}
+
+#tasks {
+    height: 35px;
+    width: 180px;
+    border-radius: 5px;
+    border: none;
+    background-color:white;
+    padding-left: 8px;
+}
+
+#task_list {
+    padding: 0;
+    margin-top: 20px;
+    list-style: none;
+}
+
+#task_list li {
+    background-color: white;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow:5px 5px 90px 2px white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    overflow-wrap: anywhere;
+}
+
+.task_text {
+    cursor: pointer;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.delete_btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 7px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete_btn:hover {
+    background-color: darkred;
+}
+
+@media (max-width: 400px) {
+    div {
+        width: auto;
+    }
+}
