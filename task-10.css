@@ -1,0 +1,50 @@
+div{
+    text-align:center;
+    margin-top:100px;
+    border-style:hidden;
+    background-color:color(from  srgb r g b);
+    width:500px;
+    height:auto;
+    padding-top:15px;
+    padding-bottom:20px;
+    justify-self:center;
+    border-radius:20px;
+    box-shadow:5px 5px 20px black;
+}
+#incre,#incre5{
+    background-color:green;
+}
+#decre,#decre5{
+    background-color:red;
+}
+#reset{
+    background-color: black;
+    color:white;
+}
+#count{
+    width:auto;
+    padding-bottom:5px;
+    padding-left:50px;
+    padding-right:50px;
+    padding-top:5px;
+    margin-top:10px;
+    margin-bottom:20px;
+}
+form{
+    display:flex;
+    justify-content: center;
+}
+button{
+    width:100px;
+    height:40px;
+    border-radius:10px;
+    box-shadow:5px 5px 10px black;
+}
+#num{
+    font-size:75px;
+    padding-top:0px;
+    padding-bottom:0px;
+}
+body{
+    background-color:white;
+}
