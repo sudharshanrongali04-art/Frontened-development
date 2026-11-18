@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    padding: 24px;
+    background: #eef2f7;
+    color: #172033;
+    font-family: Arial, sans-serif;
+}
+
+.gallery {
+    width: min(100%, 760px);
+    padding: 28px;
+    text-align: center;
+    background:white;
+    border-radius: 16px;
+    box-shadow: 6px 9px 10px black;
+}
+
+h1 {
+    margin: 0 0 20px;
+    color:brown;
+    text-shadow:2px 2px 10px black;
+}
+
+.slide {
+    margin: 0;
+}
+
+.slide img {
+    display: block;
+    width: 100%;
+    height: min(55vh, 440px);
+    object-fit: contain;
+    background:black;
+    border: 1px solid #d5deed;
+    border-radius: 10px;
+    box-shadow: 4px 8px 22px maroon;
+}
+
+.slide figcaption {
+    margin-top: 12px;
+    font-weight: 600;
+}
+
+.slide-count {
+    margin: 12px 0 18px;
+    color: #566176;
+}
+
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+button {
+    min-width: 120px;
+    padding: 11px 16px;
+    border: 0;
+    border-radius: 8px;
+    background: #2457c5;
+    color: #fff;
+    font: inherit;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #19449f;
+}
+
+button:focus-visible {
+    outline: 3px solid #f3a712;
+    outline-offset: 3px;
+}
+
+@media (max-width: 480px) {
+    .gallery {
+        padding: 20px 14px;
+    }
+
+    .controls button {
+        flex: 1 1 130px;
+    }
+}

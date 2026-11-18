@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groot Gallery</title>
+    <link rel="stylesheet" href="task-11.css">
+    <script src="task-11.js" defer></script>
+</head>
+<body>
+    <main class="gallery">
+        <h1>I am Groot</h1>
+        <figure class="slide">
+            <img id="galleryImage" src="images.jpg" alt="Fox">
+            <figcaption id="imageCaption">Fox</figcaption>
+        </figure>
+        <p id="slideCount" class="slide-count" aria-live="polite"></p>
+        <div class="controls" aria-label="Gallery controls">
+            <button type="button" id="previousButton">Previous</button>
+            <button type="button" id="slideshowButton" aria-pressed="false">Start slideshow</button>
+            <button type="button" id="nextButton">Next</button>
+        </div>
+    </main>
+</body>
+</html>
