@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="task-12.css">
+    <script src="task-12.js" defer></script>
+</head>
+<body>
+    <main class="game-card">
+        <h1 class="eyebrow">GUESS THE NUMBER</h1>
+        
+        <p class="range">Between 1 and 100</p>
+
+        <form id="guessForm" novalidate>
+            <label for="guessInput">Enter your guess</label>
+            <input
+                id="guessInput"
+                type="number"
+                min="1"
+                max="100"
+                placeholder="?"
+                autocomplete="off"
+                aria-describedby="feedback attempts"
+            >
+            <button type="submit" id="guessButton">Guess</button>
+        </form>
+
+        <p id="feedback" class="feedback" aria-live="polite">Make your first guess!</p>
+        <div class="game-stats">
+            <p id="attempts" class="attempts">Attempts: 0</p>
+            <p id="score" class="score">Score: 100</p>
+        </div>
+        <button type="button" id="resetButton" class="reset" hidden>Play again</button>
+    </main>
+</body>
+</html>
