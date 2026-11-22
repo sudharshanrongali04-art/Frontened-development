@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Password Strength Checker</title>
+        <link rel="stylesheet" href="task-13.css">
+        <script src="task-13.js" defer></script>
+    </head>
+    <body>
+        <div class="card">
+            <h2>Password Strength Checker</h2>
+            <label for="pass">Password</label><br>
+            <input id="pass" type="password" placeholder="Password" autocomplete="new-password">
+
+            <ul>
+                <li id="length">
+                    <span class="icon">❌</span>
+                    <span>At least 8 characters</span>
+                </li>
+                <li id="capital">
+                    <span class="icon">❌</span>
+                    <span>One capital letter</span>
+                </li>
+                <li id="small">
+                    <span class="icon">❌</span>
+                    <span>One small letter</span>
+                </li>
+                <li id="symbol">
+                    <span class="icon">❌</span>
+                    <span>Special character</span>
+                </li>
+            </ul>
+
+            <p id="strengthText" aria-live="polite">Strength: Enter a password</p>
+            <div
+                class="strength-meter"
+                role="meter"
+                aria-label="Password strength"
+                aria-valuemin="0"
+                aria-valuemax="4"
+                aria-valuenow="0"
+            >
+                <div id="strengthFill" class="strength-fill"></div>
+            </div>
+
+            <label for="cpass">Confirm Password</label><br>
+            <input
+                id="cpass"
+                type="password"
+                placeholder="Confirm Password"
+                autocomplete="new-password"
+            >
+            <button id="resetButton" type="button">Reset</button>
+        </div>
+    </body>
+</html>

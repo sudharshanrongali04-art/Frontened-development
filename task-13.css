@@ -1,0 +1,87 @@
+li{
+    color:red;
+}
+li.valid{
+    color:green;
+}
+.card{
+    justify-self: center;
+    margin-top:90px;
+    padding-left:40px;
+    padding-right:40px;
+    padding-top:30px;
+    padding-bottom:60px;
+    background-color:rgb(57, 56, 80);
+    border-radius:25px;
+    box-shadow: 2px 2px 12px white;
+}
+h2{
+    color:white;
+}
+body{
+    color:white;
+    background-color:rgb(30, 21, 63);
+}
+input{
+    width: 250px;
+    height:35px;
+    border-radius: 10px;
+    margin-top:8px;
+    margin-bottom:8px;
+}
+button{
+    justify-self: center;
+    display:block;
+    margin-top:16px;
+    padding:10px 20px;
+    border:0;
+    border-radius:8px;
+    color:white;
+    background-color:#514b78;
+    cursor:pointer;
+}
+button:hover{
+    background-color:#655d91;
+}
+button:focus-visible{
+    outline:2px solid white;
+    outline-offset:2px;
+}
+label{
+    color:whitesmoke;
+    padding-top:10px;
+    margin-top:10px;
+    gap:10px;
+    margin-bottom:30px;
+}
+#length{
+    padding-top:10px;
+}
+#symbol{
+    padding-bottom:15px;
+}
+.strength-meter{
+    width:100%;
+    height:8px;
+    overflow:hidden;
+    background-color:rgb(30, 21, 63);
+    border-radius:4px;
+}
+.strength-fill{
+    width:0;
+    height:100%;
+    background-color:#d9534f;
+    transition:width 0.2s ease, background-color 0.2s ease;
+}
+.strength-fill.level-2{
+    background-color:#f0ad4e;
+}
+.strength-fill.level-3{
+    background-color:#8bc34a;
+}
+.strength-fill.level-4{
+    background-color:#4caf50;
+}
+#strengthText{
+    margin-bottom:8px;
+}
