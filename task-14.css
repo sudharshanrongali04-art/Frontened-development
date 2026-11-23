@@ -1,0 +1,79 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    font-family: Arial, sans-serif;
+    background: #fbfbfc;
+}
+.game-card {
+    width: 420px;
+    max-width: calc(100% - 30px);
+    padding: 24px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    background: orangered;
+}
+h1 {
+    margin: 0 0 20px;
+}
+.score{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.choices{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    justify-content: center;
+}
+.moves{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+
+}
+.moves 
+.score p,
+.choices p {
+    margin: 8px 0;
+}
+.choices > div {
+    width: 120px;
+}
+.choice {
+    height: 100px;
+    display: grid;
+    place-items: center;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    background: #f8f8f8;
+    font-size: 50px;
+}
+#result {
+    min-height: 24px;
+    font-weight: bold;
+}
+.moves {
+    margin: 20px 0;
+}
+.moves button,
+.reset-button {
+    flex: 1;
+    padding: 12px 6px;
+    border: 1px solid #333;
+    border-radius: 15px;
+    background: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+.moves button:hover,
+.reset-button:hover {
+    background: #333;
+    color: white;
+}
+.reset-button {
+    width: 70%;
+}

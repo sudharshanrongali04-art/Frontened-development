@@ -1,0 +1,38 @@
+<html>
+<head>
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="task-14.css">
+    <script src="task-14.js" defer></script>
+</head>
+<body>
+    <main class="game-card">
+        <h1>Rock Paper Scissors</h1>
+
+        <div class="score">
+            <p>You: <strong id="playerScore">0</strong></p>
+            <p>Computer: <strong id="computerScore">0</strong></p>
+        </div>
+
+        <p id="result">Choose Rock, Paper or Scissors</p>
+
+        <div class="choices">
+            <div>
+                <p>You</p>
+                <div id="playerChoice" class="choice">?</div>
+            </div>
+            <div>
+                <p>Computer</p>
+                <div id="computerChoice" class="choice">?</div>
+            </div>
+        </div>
+
+        <div class="moves">
+            <button type="button" data-choice="rock">✊ Rock</button>
+            <button type="button" data-choice="paper">✋ Paper</button>
+            <button type="button" data-choice="scissors">✌️ Scissors</button>
+        </div>
+
+        <button id="resetButton" class="reset-button" type="button">Reset Game</button>
+    </main>
+</body>
+</html>
