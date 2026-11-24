@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>StepUp | Sneakers for every day</title>
+    <link rel="stylesheet" href="task-15.css">
+    <script src="task-15.js" defer></script>
+</head>
+<body>
+    <div class="announcement">A little more comfort in every step. Explore the latest collection.</div>
+
+    <header class="site-header">
+        <a class="brand" href="#" aria-label="StepUp home">step<span>up</span>.</a>
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="#products">New arrivals</a>
+            <a href="#products">Men</a>
+            <a href="#products">Everyday sneakers</a>
+        </nav>
+        <div class="header-actions">
+            <a class="icon-link" href="#products" aria-label="Your profile">♙</a>
+            <a class="bag-link" href="#products"><span aria-hidden="true">▢</span> Bag <span class="bag-count" aria-live="polite">0</span></a>
+        </div>
+    </header>
+    <p class="visually-hidden" id="cart-status" role="status" aria-live="polite"></p>
+
+    <main>
+        <section class="products-section" id="products" aria-labelledby="products-title">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">MADE FOR YOUR EVERYDAY</p>
+                    <h2 id="products-title">Sneakers to step into</h2>
+                </div>
+                <span class="result-count">04 styles</span>
+            </div>
+
+            <div class="cart-toolbar">
+                <button class="view-cart-button" id="view-cart" type="button" aria-expanded="false" aria-controls="cart-panel">
+                    View cart (<span id="cart-item-count">0</span>)
+                </button>
+            </div>
+            <section class="cart-panel" id="cart-panel" aria-labelledby="cart-title" hidden>
+                <div class="cart-panel-heading">
+                    <h3 id="cart-title">Your cart</h3>
+                    <button class="close-cart" id="close-cart" type="button">Close</button>
+                </div>
+                <p class="cart-empty" id="cart-empty">Your cart is empty. Add a pair to get started.</p>
+                <ul class="cart-items" id="cart-items"></ul>
+                <div class="cart-total" id="cart-total-row" hidden>
+                    <p class="cart-calculation-row">
+                        <span>Original total</span>
+                        <strong id="cart-mrp">₹0</strong>
+                    </p>
+                    <p class="cart-calculation-row cart-savings">
+                        <span>You save</span>
+                        <strong id="cart-savings">₹0</strong>
+                    </p>
+                    <p class="cart-calculation-row cart-payable">
+                        <span>Total after discount</span>
+                        <strong id="cart-total">₹0</strong>
+                    </p>
+                </div>
+            </section>
+
+            <div class="product-grid">
+                <article class="product-card">
+                    <div class="product-image">
+                        <span class="product-tag">BESTSELLER</span>
+                        <img src="https://www.thomascrick.in/cdn/shop/files/Artboard_8SL.jpg?v=1785841939&amp;width=1080" alt="Thomas Crick sneakers">
+                        <a class="quick-view" href="#product-thomas">View details <span aria-hidden="true">→</span></a>
+                        <button class="add-to-cart" type="button" data-product-name="Thomas Crick everyday sneakers" data-product-price="1200" data-product-mrp="2000" aria-label="Add Thomas Crick everyday sneakers to bag">+</button>
+                    </div>
+                    <div class="product-info" id="product-thomas">
+                        <div class="product-brand"><span class="assured-mark">✓</span> Assured <span class="dot">·</span> Thomas Crick</div>
+                        <h3>Everyday sneakers</h3>
+                        <p class="product-description">A fresh, versatile pair for daily wear.</p>
+                        <p class="price"><strong>₹1,200</strong> <del>₹2,000</del> <span>40% off</span></p>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <span class="product-tag">CASUAL</span>
+                        <img src="https://rukmini1.flixcart.com/image/1500/1500/xif0q/shoe/b/u/u/6-666-6-0-xtoon-mustard-resized-original-imahkjdyahmxycys.jpeg?q=70" alt="Mustard casual sneakers by Xtoon">
+                        <a class="quick-view" href="#product-xtoon">View details <span aria-hidden="true">→</span></a>
+                        <button class="add-to-cart" type="button" data-product-name="Xtoon mustard casual sneakers" data-product-price="1500" data-product-mrp="3000" aria-label="Add Xtoon mustard casual sneakers to bag">+</button>
+                    </div>
+                    <div class="product-info" id="product-xtoon">
+                        <div class="product-brand">Xtoon</div>
+                        <h3>Mustard casual sneakers</h3>
+                        <p class="product-description">A pop of color for off-duty days.</p>
+                        <p class="price"><strong>₹1,500</strong> <del>₹3,000</del> <span>50% off</span></p>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <span class="product-tag">NEW IN</span>
+                        <img src="https://img0.junaroad.com/uiproducts/22318565/pri_175_p-1787213017.jpg" alt="Sneakers from LimeRoad">
+                        <a class="quick-view" href="#product-limeroad">View details <span aria-hidden="true">→</span></a>
+                        <button class="add-to-cart" type="button" data-product-name="LimeRoad weekend-ready sneakers" data-product-price="1000" data-product-mrp="2000" aria-label="Add LimeRoad weekend-ready sneakers to bag">+</button>
+                    </div>
+                    <div class="product-info" id="product-limeroad">
+                        <div class="product-brand">LimeRoad</div>
+                        <h3>Weekend-ready sneakers</h3>
+                        <p class="product-description">A relaxed look made for days out.</p>
+                        <p class="price"><strong>₹1,000</strong> <del>₹2,000</del> <span>50% off</span></p>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <span class="product-tag">CLASSIC</span>
+                        <img src="https://assets.ajio.com/medias/sys_master/root/20250318/DZR4/67d96cf459f8353980454304/-1117Wx1400H-451023582-beige-MODEL.jpg" alt="Beige sneakers by U.S. Polo Assn.">
+                        <a class="quick-view" href="#product-polo">View details <span aria-hidden="true">→</span></a>
+                        <button class="add-to-cart" type="button" data-product-name="U.S. Polo Assn. beige court sneakers" data-product-price="3000" data-product-mrp="4000" aria-label="Add U.S. Polo Assn. beige court sneakers to bag">+</button>
+                    </div>
+                    <div class="product-info" id="product-polo">
+                        <div class="product-brand">U.S. Polo Assn.</div>
+                        <h3>Beige court sneakers</h3>
+                        <p class="product-description">A timeless neutral for easy styling.</p>
+                        <p class="price"><strong>₹3,000</strong> <del>₹4,000</del> <span>25% off</span></p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
