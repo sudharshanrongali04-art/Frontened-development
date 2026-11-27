@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#eef4f7">
+    <title>Weather — Your daily forecast</title>
+    <link rel="stylesheet" href="task-17.css">
+    <script src="task-17.js" defer></script>
+</head>
+<body>
+    <main class="weather-app">
+        <header class="page-header">
+            <a class="brand" href="#" aria-label="Weather home">
+                <span class="brand-mark" aria-hidden="true">☼</span>
+                <span>weather<span class="brand-period">.</span></span>
+            </a>
+            <p class="header-note">A little clarity for your day</p>
+        </header>
+
+        <section class="dashboard" aria-labelledby="page-title">
+            <div class="intro">
+                <p class="eyebrow">YOUR LOCAL FORECAST</p>
+                <h1 id="page-title">Weather, at a glance.</h1>
+                <p class="intro-copy">Find current conditions for any city around the world.</p>
+            </div>
+
+            <form class="search-form" id="search-form" role="search">
+                <label class="visually-hidden" for="city-input">Search for a city</label>
+                <span class="search-icon" aria-hidden="true">⌕</span>
+                <input
+                    id="city-input"
+                    name="city"
+                    type="search"
+                    placeholder="Search a city..."
+                    autocomplete="off"
+                    required
+                >
+                <button class="search-button" type="submit">
+                    <span>Search</span>
+                    <span aria-hidden="true">→</span>
+                </button>
+            </form>
+
+            <p class="status-message" id="status-message" role="status" aria-live="polite">
+                Loading weather...
+            </p>
+
+            <section class="weather-card" id="weather-card" aria-label="Current weather" hidden>
+                <div class="weather-top">
+                    <div class="location">
+                        <span class="location-pin" aria-hidden="true">⌖</span>
+                        <div>
+                            <h2 id="city-name">—</h2>
+                            <p id="local-time">Current conditions</p>
+                        </div>
+                    </div>
+                    <span class="live-badge"><span aria-hidden="true"></span> LIVE</span>
+                </div>
+
+                <div class="current-weather">
+                    <div class="temperature-block">
+                        <p class="temperature" id="temperature">—<span>°</span></p>
+                        <p class="feels-like" id="feels-like">Feels like —°</p>
+                    </div>
+                    <div class="condition-block">
+                        <span class="weather-icon" id="weather-icon" aria-hidden="true">☀️</span>
+                        <p id="weather-condition">—</p>
+                    </div>
+                </div>
+
+                <div class="weather-divider"></div>
+                <div class="weather-details">
+                    <article class="detail">
+                        <span class="detail-icon humidity-icon" aria-hidden="true">％</span>
+                        <div>
+                            <p class="detail-label">Humidity</p>
+                            <p class="detail-value" id="humidity">—<span>%</span></p>
+                        </div>
+                    </article>
+                    <article class="detail">
+                        <span class="detail-icon wind-icon" aria-hidden="true">↗</span>
+                        <div>
+                            <p class="detail-label">Wind speed</p>
+                            <p class="detail-value" id="wind-speed">—<span> km/h</span></p>
+                        </div>
+                    </article>
+                    <article class="detail">
+                        <span class="detail-icon day-icon" aria-hidden="true">◷</span>
+                        <div>
+                            <p class="detail-label">Daylight</p>
+                            <p class="detail-value" id="daylight">—</p>
+                        </div>
+                    </article>
+                </div>
+                <p class="data-credit">Weather data by Open-Meteo</p>
+            </section>
+
+            <div class="weather-placeholder" id="weather-placeholder" aria-hidden="true">
+                <span class="placeholder-sun">☼</span>
+                <span class="placeholder-cloud"></span>
+            </div>
+        </section>
+        <footer class="page-footer">Take the day as it comes.</footer>
+    </main>
+</body>
+</html>
